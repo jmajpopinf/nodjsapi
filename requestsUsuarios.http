@@ -1,0 +1,39 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "usuario": "usuario3",
+    "nombre": "Beto",
+    "edad": "22",
+    "genero": "M",
+    "cargo": "Vendedor",
+    "contrasena": "123456",
+    "fechaRegistro": "2022-04-09"
+}
+
+###
+GET http://localhost:9000/api/usuarios HTTP/1.1
+
+###
+GET http://localhost:9000/api/usuarios?usuario=usuario1&contrasena=123456 HTTP/1.1
+
+###
+GET http://localhost:9000/api/usuarios/6250bdf5f6ca2e8478ac3cab HTTP/1.1
+
+###
+PUT http://localhost:9000/api/usuarios/625267a70d41b8044f63194a HTTP/1.1
+Content-Type: application/json
+
+{
+    "usuario": "usuario2",
+    "nombre": "Juan Ruiz",
+    "edad": "66",
+    "genero": "M",
+    "cargo": "Vendedor",
+    "contrasena": "123456",
+    "fechaRegistro": "2022-04-08"
+}
+
+###
+DELETE http://localhost:9000/api/usuarios/625267a70d41b8044f63194a HTTP/1.1
