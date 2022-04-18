@@ -12,6 +12,7 @@ router.post("/usuarios", (req, res) => {
 
 });
 
+/*
 router.get("/usuarios", (req, res) => {
     userSchema
     .find()
@@ -19,7 +20,7 @@ router.get("/usuarios", (req, res) => {
     .catch((error) => res.json({ message: error}));
 
 });
-
+*/
 
 
 router.get("/usuarios", (req, res) =>{

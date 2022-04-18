@@ -7,7 +7,7 @@ const userSchema = mongoose.Schema({
     genero: {type: String, required: true},
     cargo: {type: String, required: true},
     contrasena: {type: String, required: true},
-    fechaRegistro: {type: Date, required: true}
+    fechaRegistro: {type: Date, default: Date.now}//usar para autodate
 });
 
 const usuario = mongoose.model('usuario', userSchema);

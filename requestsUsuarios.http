@@ -1,15 +1,14 @@
 ###
-POST http://localhost:9000/api/users HTTP/1.1
+POST http://localhost:9000/api/usuarios HTTP/1.1
 Content-Type: application/json
 
 {
-    "usuario": "usuario3",
-    "nombre": "Beto",
-    "edad": "22",
+    "usuario": "usuario4",
+    "nombre": "Luis",
+    "edad": "26",
     "genero": "M",
     "cargo": "Vendedor",
-    "contrasena": "123456",
-    "fechaRegistro": "2022-04-09"
+    "contrasena": "123456"
 }
 
 ###
@@ -36,4 +35,4 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:9000/api/usuarios/625267a70d41b8044f63194a HTTP/1.1
+DELETE http://localhost:9000/api/usuarios/625c9a5853b13258b0b89a9f HTTP/1.1
